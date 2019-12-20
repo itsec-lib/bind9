@@ -1,0 +1,16 @@
+$TTL    604800
+
+@       IN      SOA     test.lab. root.test.lab. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+	IN	NS	gateway.test.lab.
+
+200	IN	PTR	ipa01.test.lab.
+201	IN	PTR	fs.test.lab.
+210	IN	PTR	client1.test.lab.
+211	IN	PTR	client2.test.lab.
+254	IN	PTR	gateway.test.lab.
